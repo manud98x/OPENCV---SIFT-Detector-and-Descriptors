@@ -51,3 +51,13 @@ This task compares multiple images by detecting SIFT keypoints, extracting descr
 - OpenCV
 - NumPy
 - Matplotlib
+
+## Usage
+
+### SIFT Keypoint Detection for a Single Image
+
+```python siftImages.py <image_file>```
+
+### SIFT Image Comparison for Multiple Images
+
+```python siftImages.py <image_file1> <image_file2> ... ```
