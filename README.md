@@ -1,16 +1,49 @@
 # OpenCV--SIFT-Detector-and-Descriptors
 
-This repository contains Python scripts for SIFT (Scale-Invariant Feature Transform) keypoint detection and image comparison. The implementation includes resizing images to VGA resolution while maintaining aspect ratio, extracting the Y channel, detecting keypoints, and comparing images based on their SIFT descriptors.
+# SIFT Image Processing and Comparison
 
-## Features
+This repository contains Python scripts for performing SIFT (Scale-Invariant Feature Transform) keypoint detection and descriptor extraction on images, resizing images to VGA resolution, and comparing multiple images based on SIFT descriptors using histogram distance.
 
-- **Image Resizing**: Resize images to VGA resolution (480x600) while maintaining aspect ratio.
-- **SIFT Keypoint Detection**: Detect keypoints and compute descriptors using the SIFT algorithm.
-- **Keypoint Visualization**: Draw keypoints on images with orientation lines and cross marks.
-- **Descriptor Histograms**: Compute histograms of descriptors and calculate dissimilarity distances.
-- **Image Comparison**: Compare images using SIFT descriptors and display a dissimilarity matrix.
+## Table of Contents
 
-## Getting Started
+- [Introduction](#introduction)
+- [Tasks](#tasks)
+  - [Task 1: Image Resizing and SIFT Keypoint Detection](#task-1-image-resizing-and-sift-keypoint-detection)
+  - [Task 2: SIFT Descriptor Comparison](#task-2-sift-descriptor-comparison)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Files](#files)
+- [License](#license)
+
+## Introduction
+
+This project aims to demonstrate image processing tasks using OpenCV, including resizing images to VGA resolution while maintaining aspect ratio, detecting SIFT keypoints, and comparing multiple images using SIFT descriptors and histogram distance.
+
+## Tasks
+
+### Task 1: Image Resizing and SIFT Keypoint Detection
+
+This task resizes an input image to VGA resolution (480x600) while maintaining its aspect ratio, converts it to the Y channel of the XYZ color space, and detects SIFT keypoints on the Y channel. It also draws keypoints on the resized image.
+
+#### Features
+
+- Resize image to VGA resolution while maintaining aspect ratio.
+- Convert image to the Y channel of XYZ color space.
+- Detect SIFT keypoints and compute descriptors.
+- Draw keypoints on the resized image.
+
+### Task 2: SIFT Descriptor Comparison
+
+This task compares multiple images by detecting SIFT keypoints, extracting descriptors, clustering descriptors using k-means, and computing histogram distances between images to create a dissimilarity matrix.
+
+#### Features
+
+- Detect SIFT keypoints and descriptors for multiple images.
+- Perform k-means clustering on descriptors.
+- Compute histogram of descriptors for each image.
+- Calculate histogram distances and create a dissimilarity matrix.
+
+## Installation
 
 ### Prerequisites
 
